@@ -1,0 +1,69 @@
+.trusted-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f8fb;
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 12px;
+}
+.brand-section-slider {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.slide {
+  margin: 10px;
+}
+.bhim {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.gokwik {
+  height: 30px;
+  width: 60px;
+}
+.mamaearth {
+  height: 30px;
+  width: 60px;
+}
+@media (min-width: 768px) {
+  .trusted-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8fb;
+    margin-top: 50px;
+    padding: 50px;
+    font-size: 12px;
+  }
+
+  .brand-section-slider {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .slide {
+    margin: 10px;
+  }
+
+  .bhim {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .gokwik {
+    height: 30px;
+    width: 60px;
+  }
+
+  .mamaearth {
+    height: 30px;
+    width: 60px;
+  }
+}

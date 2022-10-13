@@ -1,0 +1,28 @@
+.card-container {
+  margin: 20px;
+}
+.card-image {
+  height: 200px;
+  width: 200px;
+}
+.position-div {
+  position: relative;
+}
+.card-data-flex {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.caption {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: black;
+}
+.card-data-flex > h3 {
+  font-size: 20px;
+}
+.NavLink {
+  text-decoration: none;
+}

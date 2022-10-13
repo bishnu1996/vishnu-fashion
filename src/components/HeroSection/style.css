@@ -1,0 +1,37 @@
+.herosection-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.herosection-container .hero-section-data {
+  padding: 0px 10px;
+}
+.herosection-container .hero-section-image {
+  margin-top: 10px;
+}
+.hero-section-image .hero-section-img {
+  background-size: contain;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .herosection-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 0px 220px;
+  }
+  .herosection-container .hero-section-data {
+    padding: 0px 10px;
+    flex-basis: 50%;
+  }
+  .herosection-container .hero-section-image {
+    flex-basis: 50%;
+
+    margin-top: 10px;
+  }
+  .hero-section-image .hero-section-img {
+    background-size: contain;
+    width: 100%;
+  }
+}
