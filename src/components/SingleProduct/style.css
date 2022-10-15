@@ -1,0 +1,15 @@
+.single-container{
+    display: flex;
+    padding: 200px;
+}
+.single-container .single-image{
+    flex: 1;
+}
+.single-container .single-details{
+    flex: 1;
+}
+.product-details-warranty{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
