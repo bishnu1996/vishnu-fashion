@@ -1,0 +1,17 @@
+.sort-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.grid-icon{
+    padding: 1rem;
+}
+.list-icon{
+    padding: 1rem;
+}
+
+.active{
+    background-color: black;
+    color: #ffff;
+}

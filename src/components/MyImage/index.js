@@ -1,34 +1,40 @@
-import React from 'react'
+import React, { useState } from "react";
+import './style.css';
+const MyImage = ({ imgs }) => {
+console.log(imgs);
+const [mainImage,setMainImage] = useState(imgs?imgs[0]:null);
 
-const MyImage = ({imgs}) => {
-  console.log(imgs);
   return (
-    <div className='myImage-container'>
+    <div className="myImage-container">
       <div className="four-imgs">
-      {/* {imgs.map((currElem,index) =>{
+        {imgs?(imgs.map((currElem,index) =>{
       return(
-        <div className="first-image">
-            <img src={currElem.url} alt={currElem.filename}  key={index} className="box-img"/>            
+        <div className="box-pro">
+            <img src={currElem.url} alt={currElem.filename}  key={index} className="box-image-product" onClick={()=>setMainImage(currElem)} />            
           </div>
-      )})} */}
-      {/* <div className='box'>
-      <img src={imgs[0].url} alt="" />
+      )})):null}
+        
       </div>
-      <div className='box'>
-      <img src={imgs[1].url} alt="" />
-      </div>
-      <div className='box'>
-      <img src={imgs[2].url} alt="" />
-      </div>
-      <div className='box'>
-      <img src={imgs[3].url} alt="" />
-      </div>
-      </div>
-      <div className="single-imgs">
-        */}
+      <div className="single-imgsss">
+        <img src={imgs ? mainImage.url : null} alt={imgs ? mainImage.url : null} className="box-image-product"/>
       </div>
     </div>
   )
-}
+    // <div className="myImage-container">
+    // <div className="four-imgs">
+    //   {imgs?(imgs.map((currElem,index) =>{
+    // return(
+    //   <div className="box-pro">
+    //       <img src={currElem.url} alt={currElem.filename}  key={index} className="box-image-product" />            
+    //     </div>
+    // )})):""}
+  
+  //   </div>
+  //   <div className="single-imgsss">
+  //     <img src={imgs ? imgs[0].url : ""} alt={imgs ? imgs[0].url : ""} className="box-image-product"/>
+  //   </div>
+  // </div>
+  //);
+};
 
 export default MyImage;

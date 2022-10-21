@@ -1,0 +1,9 @@
+.cart-add-container{
+    display: flex;
+    width: 200px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.button-incre{
+    margin: 10px 20px 10px 20px;
+}

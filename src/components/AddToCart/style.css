@@ -1,0 +1,23 @@
+.addtocart-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btnStyle{
+    border-radius: 50%;
+    width: 24px;
+    height:24px;
+    opacity: 0.5;
+}
+
+.active{
+    opacity: 1.0;
+}
+.fa-check{
+    color: white;
+}
+.add-cart-btn{
+    background-color: rgb(12, 211, 12);
+    color:  white;
+    padding: 10px 20px ;
+}

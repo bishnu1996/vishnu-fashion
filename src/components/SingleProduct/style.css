@@ -1,12 +1,17 @@
 .single-container{
     display: flex;
-    padding: 200px;
+    align-items: center;
+    justify-content: space-around;
 }
 .single-container .single-image{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .single-container .single-details{
     flex: 1;
+   
 }
 .product-details-warranty{
     display: flex;

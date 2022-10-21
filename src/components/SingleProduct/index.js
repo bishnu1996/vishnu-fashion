@@ -9,6 +9,10 @@ import { MdOutlineSecurity } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri"
 import './style.css';
+import StarRating from '../StarRating/index';
+import AddToCart from '../AddToCart';
+
+
 //const URL = "https://api.pujakaitem.com/api/products?id=thapaserialnol"
 
 
@@ -18,8 +22,6 @@ const SingleProduct = () => {
   const {getSingleProduct,isSingleLoading,singleProduct} = useProductContext();
   const {id} = useParams() 
   const {id:vishnu,name,company,price,description,category,stock,stars,reviews,image} = singleProduct;
-  console.log(name);
- console.log("images",image);
   useEffect(()=>{
     getSingleProduct(`${URL}?id=${id}`);
   },[]);
@@ -32,14 +34,13 @@ const SingleProduct = () => {
     <PageNavigation  title = {name}/>
     <div className="single-container">
       <div className="single-image">
-          {/* <MyImage imgs = {image}/> */}
+          <MyImage imgs = {image}/>
           {/* <img src={image[0].url} alt="abckwdfwfw" srcset="" /> */}
          
       </div>
       <div className="single-details">
         <h3>{name}</h3>
-        <p>{stars}</p>
-        <p>{reviews}</p>
+        <StarRating stars={ stars } reviews = { reviews }/>
         <p className="product-price-data">
           MRP:<del>
             <FormatPrice price ={price + 250000} />
@@ -66,6 +67,8 @@ const SingleProduct = () => {
         <p>Available : <span> {stock > 0 ?"In Stock" : "Not Available"} </span> </p>
         <p className="id">id: {id}</p>
         <p>brand: <span>{company}</span></p>
+        <hr />
+        {stock > 0 && <AddToCart product = {singleProduct} />}
       </div> 
     </div>
     </> 

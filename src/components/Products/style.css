@@ -1,0 +1,15 @@
+.products-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-view-sort{
+    display: flex;
+    flex-direction: column;
+}
+.filter-section{
+    flex-basis: 30%;
+}
+.product-view-sort{
+    flex-basis: 70%;
+}

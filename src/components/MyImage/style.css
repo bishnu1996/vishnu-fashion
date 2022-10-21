@@ -1,0 +1,16 @@
+.myImage-container{
+    display: flex;
+    align-items: center;
+}
+.box-pro{
+    width: 100px;
+    padding: 0;
+}
+.box-image-product{
+    width: 100%;
+    background-size: cover;
+}
+.single-imgsss{
+    width: 300px;
+    margin: 10px;
+}
