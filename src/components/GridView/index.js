@@ -6,7 +6,7 @@ const GridView = ({products}) => {
   return (
     <div className='gridview-container'>
     {
-        products.map((curElem)=>{
+        products && products.map((curElem)=>{
             return <Product key={curElem.id} {...curElem} />
         })
     }

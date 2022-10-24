@@ -3,7 +3,7 @@ import FilterSection from '../FilterSection';
 import Sort from '../Sort';
 import ProductList from '../ProductList';
 import './style.css';
-//import { useFilterContext } from "../context/filter_context";
+import { useFilterContext } from "../context/filter_context";
 const Products = () => {
   return( 
   <div className="products-container">

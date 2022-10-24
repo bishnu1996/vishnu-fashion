@@ -4,7 +4,7 @@ import { useFilterContext } from "../context/filter_context";
 import "./style.css";
 const Sort = () => {
 
-  const {grid_view,setGridView,setListView,filter_products} = useFilterContext();
+  const {grid_view,setGridView,setListView,filter_products,sorting} = useFilterContext();
 
   return (
     <div className="sort-section">
@@ -18,13 +18,18 @@ const Sort = () => {
         </button>
       </div>
       <div className="total-product-length">
-        {filter_products.length} Total Products
+        {filter_products ? filter_products.length : null} Total Products
       </div>
       <div className="filter-by-price">
-        <select>
-          <option value="">Hello</option>
-          <option value="">moto</option>
+      <form action="">
+        <label htmlFor="sort"></label>
+        <select name="sort" id="sort" onClick={sorting}>
+          <option value="lowest">Price(Lowest)</option>
+          <option value="highest">Price(Highest)</option>
+          <option value="a-z">Price(a-z)</option>
+          <option value="z-a">Price(z-a)</option>
         </select>
+      </form>.
       </div>
     </div>
   );
